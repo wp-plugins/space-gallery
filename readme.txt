@@ -5,8 +5,10 @@ Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Tags: Image, Slideshow, Space, Gallery
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 5.0
+Tested up to: 3.5
+Stable tag: 5.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
 Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin.
 
@@ -21,22 +23,29 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/08/14/sp
 
 Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. It's just another image slideshow show gallery. Click on the below images to see it in action. Space Gallery is a JQuery based slideshow plugin that provides smoky out of the fantasy effect to images. Bring in a smooth sliding effect to image views with this wonderful JavaScript slider.
 
-**This is the XML based slide show, so to add or delete the images.**	
-		
-1. Take the "space-gallery.xml" XML file from plugin folder.		
-2. add/update/delete the image in the xml file.		
-3. You can use full image path in XML file.	
-
 **We can use this plug-in in different way.**		
 
-2. Copy and past the below mentioned code to your desired template location.	
-&lt;?php if (function_exists (space_show)) space_show(); ?&gt;			
+1. Copy and past the below mentioned code to your desired template location.	
 
-3. Use the below code to the page or post.			
-<code>[space-gallery=filename=space-gallery.xml]</code>
+Version 1.0 to 5.0
+
+<code>&lt;?php if (function_exists (space_show)) space_show(); ?&gt;</code>	
+
+*Version 5.0 onwards*
+
+<code>&lt;?php space_show('dir1'); ?&gt;</code>	
+
+2. Use the below code to the page or post.
+
+*Version 1.0 to 5.0*
 	
+<code>[space-gallery=filename=space-gallery.xml]</code>
 filename = new-simple-gallery.xml		
-This is the name of the XML file gallery, this xml file should be available in plugin forder.		
+This is the name of the XML file gallery, this xml file should be available in plugin forder.
+
+*Version 5.0 onwards*
+
+<code>[space-gallery directory="dir1"]</code>	
 		
 See the live demo !		
 To see my all plugin : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/)	
@@ -57,17 +66,6 @@ More info : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/
 *	Go to 'add new' menu under 'plugins' tab in your wordpress admin.		
 *	Search 'space-gallery' plugin using search option.		
 *	Find the plugin & Click 'Install Now' link.		
-
-**Configuration**
-
-*	Option - 1 : use below mentioned code in the page or post.
-
-<code>[space-gallery=filename=space-gallery.xml]</code>
-
-*	Option - 2 : Copy and past the below mentioned code in desired template location.		
-	
-&lt;?php if (function_exists (space_show)) space_show(); ?&gt;	
-
 
 == Frequently Asked Questions ==
 
@@ -107,6 +105,13 @@ Random disply option disabled
 = 5.0 =
 New demo link, www.gopiplus.com
 
+= 5.1 =
+Major update
+All XML files removed and introduced directory option. from this version onwards gallery images loading from the mentioned directory. in the admin we have option to set the image directory location
+Tested up to WordPress 3.5
+Avoid registering the alternate jQuery.
+From this version we are using existing wordpress jQuery.
+
 == Changelog ==
 
 Note: Please BackUp your XML file before update the plugin version.
@@ -129,3 +134,10 @@ Random disply option disabled
 
 = 5.0 =
 New demo link, www.gopiplus.com
+
+= 5.1 =
+Major update
+All XML files removed and introduced directory option. from this version onwards gallery images loading from the mentioned directory. in the admin we have option to set the image directory location
+Tested up to WordPress 3.5
+Avoid registering the alternate jQuery.
+From this version we are using existing wordpress jQuery.
