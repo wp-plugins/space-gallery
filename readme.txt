@@ -4,9 +4,9 @@ Donate link: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Tags: Image, Slideshow, Space, Gallery
-Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 5.1
+Requires at least: 3.4
+Tested up to: 3.6
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -21,48 +21,30 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/08/14/sp
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/08/14/space-gallery/)			
 *   [About author](http://www.gopiplus.com/work/)				
 
-Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. It's just another image slideshow show gallery. Click on the below images to see it in action. Space Gallery is a JQuery based slideshow plugin that provides smoky out of the fantasy effect to images. Bring in a smooth sliding effect to image views with this wonderful JavaScript slider.
+Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. It’s just another image slideshow show gallery. Click on the below images to see it in action. Space Gallery is a JQuery based slideshow plugin that provides smoky out of the fantasy effect to images. Bring in a smooth sliding effect to image views with this wonderful JavaScript slider.
 
-**We can use this plug-in in different way.**		
+Plugin configuration
 
-1. Copy and past the below mentioned code to your desired template location.	
+Short code for pages and posts: Paste the given short code in the posts and pages. the name of the XML file available in the short code.
 
-Version 1.0 to 5.0
+Add directly in the theme: Use the given PHP code to add the gallery to your theme files directly.
 
-<code>&lt;?php if (function_exists (space_show)) space_show(); ?&gt;</code>	
-
-*Version 5.0 onwards*
-
-<code>&lt;?php space_show('dir1'); ?&gt;</code>	
-
-2. Use the below code to the page or post.
-
-*Version 1.0 to 5.0*
-	
-<code>[space-gallery=filename=space-gallery.xml]</code>
-filename = new-simple-gallery.xml		
-This is the name of the XML file gallery, this xml file should be available in plugin forder.
-
-*Version 5.0 onwards*
-
-<code>[space-gallery directory="dir1"]</code>	
-		
-See the live demo !		
-To see my all plugin : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/)	
 More info : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/)
 	
 == Installation ==	
 
-**Installation Instruction & Configuration**  	
+==Installation Instruction & Configuration== 	
 
-**Methode 1**	
+==Methode 1==
+
 *   Unpack the *.zip file and extract the /space-gallery/ folder.    
 *   Drop the 'space-gallery' folder into your 'wp-content/plugins' folder.    
 *   In word press administration panels, click on plug-in from the menu. 	  
 *   You should see your new 'space-gallery' plug-in listed under Inactive plug-in tab.			
 *   To turn the word presses plug-in on, click activate.   
  
-**Methode 2**				
+==Methode 2==		
+		
 *	Go to 'add new' menu under 'plugins' tab in your wordpress admin.		
 *	Search 'space-gallery' plugin using search option.		
 *	Find the plugin & Click 'Install Now' link.		
@@ -112,6 +94,9 @@ Tested up to WordPress 3.5
 Avoid registering the alternate jQuery.
 From this version we are using existing wordpress jQuery.
 
+= 6.0 =
+Tested upto 3.6
+
 == Changelog ==
 
 Note: Please BackUp your XML file before update the plugin version.
@@ -141,3 +126,6 @@ All XML files removed and introduced directory option. from this version onwards
 Tested up to WordPress 3.5
 Avoid registering the alternate jQuery.
 From this version we are using existing wordpress jQuery.
+
+= 6.0 =
+Tested upto 3.6
