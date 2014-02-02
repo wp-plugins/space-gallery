@@ -4,7 +4,7 @@ Plugin Name: Space gallery
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Description: Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. Its just another image slideshow show gallery. Click on the below images to see it in action. Back up your existing gallery XML files before update this plugin.
 Author: Gopi.R
-Version: 6.0
+Version: 6.1
 Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Donate link: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 License: GPLv2 or later
@@ -94,7 +94,7 @@ function space_admin_option()
 {
 	echo "<div class='wrap'>";
 	echo "<h2>"; 
-	echo "Space gallery";
+	_e('Space Gallery', 'space-gallery');
 	echo "</h2>";
     
 	$space_dir_1 = get_option('space_dir_1');
@@ -102,7 +102,7 @@ function space_admin_option()
 	$space_dir_3 = get_option('space_dir_3');
 	$space_dir_4 = get_option('space_dir_4');
 	
-	if (@$_POST['space_submit']) 
+	if (isset($_POST['space_submit'])) 
 	{
 		$space_dir_1 = stripslashes($_POST['space_dir_1']);
 		$space_dir_2 = stripslashes($_POST['space_dir_2']);
@@ -113,34 +113,41 @@ function space_admin_option()
 		update_option('space_dir_2', $space_dir_2 );
 		update_option('space_dir_3', $space_dir_3 );
 		update_option('space_dir_4', $space_dir_4 );
+		
+		?>
+		<div class="updated fade">
+			<p><strong><?php _e('Details successfully updated.', 'space-gallery'); ?></strong></p>
+		</div>
+		<?php
 	}
 	?>
 	<form name="space_form" method="post" action="">
 	<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td align="left">
 	<?php
-	echo '<p>Image directory 1 (dir1):<br><input  style="width: 650px;" type="text" value="';
-	echo $space_dir_1 . '" name="space_dir_1" id="space_dir_1" /></p>';
+	echo '<p>'.__('Image directory 1', 'space-gallery').' (dir1):<br><input  style="width: 650px;" type="text" value="';
+	echo $space_dir_1 . '" name="space_dir_1" id="space_dir_1" /><br>'.__('Short Code:', 'space-gallery').' [space-gallery directory="dir1"]</p>';
 	
-	echo '<p>Image directory 2 (dir2):<br><input  style="width: 650px;" type="text" value="';
-	echo $space_dir_2 . '" name="space_dir_2" id="space_dir_2" /></p>';
+	echo '<p>'.__('Image directory 2', 'space-gallery').' (dir2):<br><input  style="width: 650px;" type="text" value="';
+	echo $space_dir_2 . '" name="space_dir_2" id="space_dir_2" /><br>'.__('Short Code:', 'space-gallery').' [space-gallery directory="dir2"]</p>';
 	
-	echo '<p>Image directory 3 (dir3):<br><input  style="width: 650px;" type="text" value="';
-	echo $space_dir_3 . '" name="space_dir_3" id="space_dir_3" /></p>';
+	echo '<p>'.__('Image directory 3', 'space-gallery').' (dir3):<br><input  style="width: 650px;" type="text" value="';
+	echo $space_dir_3 . '" name="space_dir_3" id="space_dir_3" /><br>'.__('Short Code:', 'space-gallery').' [space-gallery directory="dir3"]</p>';
 	
-	echo '<p>Image directory 4 (dir4):<br><input  style="width: 650px;" type="text" value="';
-	echo $space_dir_4 . '" name="space_dir_4" id="space_dir_4" /></p>';
+	echo '<p>'.__('Image directory 4', 'space-gallery').' (dir4):<br><input  style="width: 650px;" type="text" value="';
+	echo $space_dir_4 . '" name="space_dir_4" id="space_dir_4" /><br>'.__('Short Code:', 'space-gallery').' [space-gallery directory="dir4"]</p>';
 	
 	echo '<input name="space_submit" id="space_submit" class="button-primary" value="Submit" type="submit" />';
 	?>
 	</td><td align="left" valign="top">  </td></tr></table>
 	</form>
 	<br />
-	<strong>Plugin configuration</strong>
+	<strong><?php _e('Plugin configuration', 'space-gallery'); ?></strong>
 	<ul>
-		<li>Option 1. Paste the available PHP code to your desired template location</li>
-		<li>Option 2. Use plugin short code in posts and pages</li>
+		<li><?php _e('Option 1. Paste the available PHP code to your desired template location', 'space-gallery'); ?></li>
+		<li><?php _e('Option 2. Use plugin short code in posts and pages', 'space-gallery'); ?></li>
 	</ul>
-	Check official website for live demo and more information <a target="_blank" href="http://www.gopiplus.com/work/2010/08/14/space-gallery/">click here</a><br> 
+	<?php _e('Check official website for live demo and more information', 'space-gallery'); ?> 
+	<a target="_blank" href="http://www.gopiplus.com/work/2010/08/14/space-gallery/"><?php _e('click here', 'space-gallery'); ?></a><br> 
 	<?php
 	echo "</div>";
 }
@@ -160,9 +167,15 @@ function space_add_javascript_files()
 
 function space_add_to_menu() 
 {
-	add_options_page('Space gallery', 'Space gallery', 'manage_options', __FILE__, 'space_admin_option' );
+	add_options_page('Space gallery', __('Space gallery', 'space-gallery'), 'manage_options', __FILE__, 'space_admin_option' );
 }
 
+function space_textdomain()
+{
+	  load_plugin_textdomain( 'space-gallery', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'space_textdomain');
 add_shortcode( 'space-gallery', 'space_show_shortcode' );
 add_action('init', 'space_add_javascript_files');
 add_action('admin_menu', 'space_add_to_menu');

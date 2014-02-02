@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Tags: Image, Slideshow, Space, Gallery
 Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 6.0
+Tested up to: 3.8
+Stable tag: 6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -21,7 +21,7 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/08/14/sp
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/08/14/space-gallery/)			
 *   [About author](http://www.gopiplus.com/work/)				
 
-Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. It’s just another image slideshow show gallery. Click on the below images to see it in action. Space Gallery is a JQuery based slideshow plugin that provides smoky out of the fantasy effect to images. Bring in a smooth sliding effect to image views with this wonderful JavaScript slider.
+Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. Its just another image slideshow show gallery. Space Gallery is a JQuery based slideshow plugin that provides smoky out of the fantasy effect to images. Bring in a smooth sliding effect to image views with this wonderful JavaScript slider.
 
 Plugin configuration
 
@@ -62,11 +62,11 @@ More info : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/
 
 == Screenshots ==
 
-More info : [click to go](http://www.gopiplus.com/work/2010/08/14/space-gallery/)
+1. Front Screen. http://www.gopiplus.com/work/2010/08/14/space-gallery/
+
+2. Admin Screen. http://www.gopiplus.com/work/2010/08/14/space-gallery/
 
 == Upgrade Notice ==
-
-Note: Please BackUp your XML file before update the plugin version.
 
 1.0				
 First version
@@ -96,6 +96,11 @@ From this version we are using existing wordpress jQuery.
 
 = 6.0 =
 Tested upto 3.6
+
+= 6.1 =
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (space-gallery.po) available in the languages folder.
 
 == Changelog ==
 
@@ -129,3 +134,8 @@ From this version we are using existing wordpress jQuery.
 
 = 6.0 =
 Tested upto 3.6
+
+= 6.1 =
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (space-gallery.po) available in the languages folder.
