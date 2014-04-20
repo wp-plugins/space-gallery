@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Tags: Image, Slideshow, Space, Gallery
 Requires at least: 3.4
-Tested up to: 3.8
-Stable tag: 6.1
+Tested up to: 3.9
+Stable tag: 6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -102,6 +102,9 @@ Tested upto 3.6
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (space-gallery.po) available in the languages folder.
 
+= 6.2 =
+1. Tested up to 3.9
+
 == Changelog ==
 
 Note: Please BackUp your XML file before update the plugin version.
@@ -139,3 +142,6 @@ Tested upto 3.6
 1. Tested up to 3.8
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (space-gallery.po) available in the languages folder.
+
+= 6.2 =
+1. Tested up to 3.9
