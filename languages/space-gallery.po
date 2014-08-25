@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Space gallery 6.1\n"
-"POT-Creation-Date: 2014-01-31 23:36+0800\n"
-"PO-Revision-Date: 2014-01-31 23:36+0800\n"
+"POT-Creation-Date: 2014-08-02 15:05+0800\n"
+"PO-Revision-Date: 2014-08-02 15:06+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,56 +13,56 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../space-gallery.php:97
+#: ../space-gallery.php:98
 msgid "Space Gallery"
 msgstr ""
 
-#: ../space-gallery.php:119
+#: ../space-gallery.php:120
 msgid "Details successfully updated."
 msgstr ""
 
-#: ../space-gallery.php:127
+#: ../space-gallery.php:128
 msgid "Image directory 1"
 msgstr ""
 
-#: ../space-gallery.php:128 ../space-gallery.php:131 ../space-gallery.php:134
-#: ../space-gallery.php:137
+#: ../space-gallery.php:129 ../space-gallery.php:132 ../space-gallery.php:135
+#: ../space-gallery.php:138
 msgid "Short Code:"
 msgstr ""
 
-#: ../space-gallery.php:130
+#: ../space-gallery.php:131
 msgid "Image directory 2"
 msgstr ""
 
-#: ../space-gallery.php:133
+#: ../space-gallery.php:134
 msgid "Image directory 3"
 msgstr ""
 
-#: ../space-gallery.php:136
+#: ../space-gallery.php:137
 msgid "Image directory 4"
 msgstr ""
 
-#: ../space-gallery.php:144
+#: ../space-gallery.php:145
 msgid "Plugin configuration"
 msgstr ""
 
-#: ../space-gallery.php:146
+#: ../space-gallery.php:147
 msgid ""
 "Option 1. Paste the available PHP code to your desired template location"
 msgstr ""
 
-#: ../space-gallery.php:147
+#: ../space-gallery.php:148
 msgid "Option 2. Use plugin short code in posts and pages"
 msgstr ""
 
-#: ../space-gallery.php:149
+#: ../space-gallery.php:150
 msgid "Check official website for live demo and more information"
 msgstr ""
 
-#: ../space-gallery.php:150
+#: ../space-gallery.php:151
 msgid "click here"
 msgstr ""
 
-#: ../space-gallery.php:170
+#: ../space-gallery.php:171
 msgid "Space gallery"
 msgstr ""
