@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Tags: Image, Slideshow, Space, Gallery
 Requires at least: 3.4
-Tested up to: 4.0
-Stable tag: 6.3
+Tested up to: 4.1
+Stable tag: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -113,6 +113,10 @@ Plugin *.po file (space-gallery.po) available in the languages folder.
 
 1. Tested up to 4.0
 
+= 6.4 =
+
+1. Tested up to 4.1
+
 == Changelog ==
 
 = 1.0 =		
@@ -164,3 +168,7 @@ Plugin *.po file (space-gallery.po) available in the languages folder.
 = 6.3 =
 
 1. Tested up to 4.0
+
+= 6.4 =
+
+1. Tested up to 4.1

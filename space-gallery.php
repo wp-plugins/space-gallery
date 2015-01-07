@@ -4,7 +4,7 @@ Plugin Name: Space gallery
 Plugin URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Description: Want to display images as a slideshow in the page or post? Then use space gallery WordPress plugin. Its just another image slideshow show gallery. Click on the below images to see it in action. Back up your existing gallery XML files before update this plugin.
 Author: Gopi Ramasamy
-Version: 6.3
+Version: 6.4
 Author URI: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 Donate link: http://www.gopiplus.com/work/2010/08/14/space-gallery/
 License: GPLv2 or later
